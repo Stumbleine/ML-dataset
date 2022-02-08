@@ -1,0 +1,54 @@
+[
+  {
+    "info": {
+      "name": "Cristhian",
+      "lastName": "Mercado Cespedes",
+      "age": 24,
+      "country": "Bolivia-cochabamba",
+      "social": {
+        "github": "github.com/Stumbleine",
+        "linkedin": "www.linkedin.com/in/cristhian-mercado-cespedes-21a77b1b7",
+        "gitlab": "gitlab.com/Stumbleine"
+      },
+      "contact": {
+        "email": "w.cosmoswaves@gmail.com",
+        "phone": ""
+      },
+      "skills": {
+        "frontend": [
+          "HTML",
+          "Javascript",
+          "Typescript",
+          "React",
+          "Vue",
+          "Angular",
+          "Material"
+        ],
+        "backend": [
+          "Java",
+          "C#",
+          "MySQL",
+          "Postgresql",
+          "SpringBoot",
+          ".NET core"
+        ]
+      },
+      "tools": ["Git", "Jira", "Figma", ""],
+      "education": [
+        {
+          "name": "Universidad Mayor de San Simon",
+          "career": "Ingeniera de Sistemas",
+          "timeline": "2016-2022"
+        }
+      ]
+    },
+    "content": {
+      "home": {},
+      "about": {},
+      "skills": {},
+      "contact": {},
+      "portfolio": {}
+    },
+    "button": {}
+  }
+]

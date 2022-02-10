@@ -27,13 +27,13 @@ export const lightTheme = createTheme({
   palette: {
     mode: "light",
     primary: {
-      main: orange[500],
+      main: orange[400],
     },
     secondary: {
       main: cyan[400],
     },
     background: {
-      paper: grey[300],
+      paper: "#fff",
       default: grey[100],
     },
     text: {

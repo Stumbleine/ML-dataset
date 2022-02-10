@@ -1,10 +1,12 @@
-import { IconButton, SvgIcon } from "@mui/material";
+import { IconButton, SvgIcon, Link } from "@mui/material";
 import { Box } from "@mui/system";
 import { ReactComponent as Discord } from "../icons/discord-brands.svg";
 import { ReactComponent as Linkedin } from "../icons/linkedin-in-brands.svg";
 import { ReactComponent as Gitlab } from "../icons/gitlab-brands.svg";
 import { GitHub, MailOutline } from "@mui/icons-material";
+import { useSelector } from "react-redux";
 export default function IconsBar() {
+  const data = useSelector((state) => state.setting.data.info.social);
   return (
     <Box
       sx={{
@@ -25,7 +27,13 @@ export default function IconsBar() {
           mb: 1,
         }}
       ></Box>
-      <IconButton>
+
+      <IconButton
+        onClick={(e) => {
+          window.location = "mailto:" + data.email;
+          e.preventDefault();
+        }}
+      >
         <MailOutline
           sx={{
             color: "text.icon",
@@ -35,7 +43,7 @@ export default function IconsBar() {
           }}
         ></MailOutline>
       </IconButton>
-      <IconButton>
+      <IconButton onClick={() => window.open(data.discord)}>
         <SvgIcon
           sx={{
             color: "text.icon",
@@ -47,7 +55,7 @@ export default function IconsBar() {
           <Discord></Discord>
         </SvgIcon>
       </IconButton>
-      <IconButton>
+      <IconButton onClick={() => window.open(data.linkedin, "_blank")}>
         <SvgIcon
           sx={{
             color: "text.icon",
@@ -59,7 +67,7 @@ export default function IconsBar() {
           <Linkedin></Linkedin>
         </SvgIcon>
       </IconButton>
-      <IconButton>
+      <IconButton onClick={() => window.open(data.github)}>
         <GitHub
           sx={{
             color: "text.icon",
@@ -69,7 +77,7 @@ export default function IconsBar() {
           }}
         ></GitHub>
       </IconButton>
-      <IconButton>
+      <IconButton onClick={() => window.open(data.gitlab)}>
         <SvgIcon
           sx={{
             color: "text.icon",

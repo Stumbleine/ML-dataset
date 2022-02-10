@@ -8,32 +8,12 @@ import {
   SvgIcon,
 } from "@mui/material";
 import { Box } from "@mui/system";
-
+import { Link } from "react-router-dom";
 import * as React from "react";
 import IconsBar from "../components/IconsBar";
+import { useSelector } from "react-redux";
 export default function Home() {
-  /*   React.useEffect(() => {
-    const node = loadCSS(
-      "https://use.fontawesome.com/releases/v5.14.0/css/all.css",
-      // Inject before JSS
-      document.querySelector("#font-awesome-css") || document.head.firstChild
-    );
-
-    return () => {
-      node.parentNode.removeChild(node);
-    };
-  }, []); */
-  /*       <Container
-      disableGutters
-      sx={{
-        background: "rgba(34,67,116,0.56)",
-        display: "flex",
-        height: "100vh",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
-      maxWidth="xl"
-    > */
+  const data = useSelector((state) => state.setting.data.home);
   return (
     <Box
       component="main"
@@ -61,7 +41,7 @@ export default function Home() {
               }}
             >
               <Typography variant="h6" sx={{ color: "primary.main" }}>
-                Hola a todos! mi nombre es
+                {data.hello}
               </Typography>
               <Typography
                 variant="h1"
@@ -71,7 +51,7 @@ export default function Home() {
                   fontSize: { lg: 75, md: 65, sm: 55, xs: 50 },
                 }}
               >
-                Cristhian M. Cespedes
+                {data.name}
               </Typography>
               <Typography
                 variant="h3"
@@ -81,7 +61,7 @@ export default function Home() {
                   fontSize: { lg: 60, md: 50, sm: 45, xs: 40 },
                 }}
               >
-                Diseñador y desarrollador web.
+                {data.profession}
               </Typography>
               <Typography
                 variant="h6"
@@ -91,14 +71,13 @@ export default function Home() {
                   fontSize: { lg: 20, md: 18, sm: 17, xs: 16 },
                 }}
               >
-                Soy un ingeniero de sistemas enfocado en el diseño y
-                construccion de aplicaciones web que generan experiencias
-                digitales excepcionales, actualmente me encuentro ampliando mis
-                conocimientos en el desarrollo para moviles con Flutter.
+                {data.presentation}
               </Typography>
-              <Button variant="outlined" sx={{ mt: 5, fontWeight: "bold" }}>
-                Contacto
-              </Button>
+              <Link to="/about" style={{ textDecoration: "none" }}>
+                <Button variant="contained" sx={{ mt: 5 }}>
+                  {data.btnAbout}
+                </Button>
+              </Link>
             </Box>
           </Grid>
         </Grid>

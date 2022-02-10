@@ -20,7 +20,11 @@ import MenuIcon from "@mui/icons-material/Menu";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import NightlightIcon from "@mui/icons-material/Nightlight";
 import { useSelector, useDispatch } from "react-redux";
-import { setThemeMode } from "../store/settings/settingSlice";
+import {
+  setThemeMode,
+  setLanguageEn,
+  setLanguageEs,
+} from "../store/settings/settingSlice";
 
 export default function NavBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -28,6 +32,7 @@ export default function NavBar() {
 
   const dispatch = useDispatch();
   const mode = useSelector((state) => state.setting.theme.mode);
+  const dataNavbar = useSelector((state) => state.setting.data.Navbar);
   //functiosns
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -40,6 +45,12 @@ export default function NavBar() {
     dispatch(setThemeMode());
   };
 
+  const changeLanguageEn = () => {
+    dispatch(setLanguageEn());
+  };
+  const changeLanguageEs = () => {
+    dispatch(setLanguageEs());
+  };
   const logo = "<CWaves>";
 
   //itemNav
@@ -188,10 +199,10 @@ export default function NavBar() {
           </Typography>
           {/* Contenendor de pestañas/pagesLinks */}
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
-            <ItemNav href={"/"} text={"Inicio"}></ItemNav>
-            <ItemNav href={"/about"} text={"About"}></ItemNav>
-            <ItemNav href={"/portfolio"} text={"Portfolio"}></ItemNav>
-            <ItemNav href={"/contact"} text={"Contact"}></ItemNav>
+            <ItemNav href={"/"} text={dataNavbar.home}></ItemNav>
+            <ItemNav href={"/about"} text={dataNavbar.about}></ItemNav>
+            <ItemNav href={"/portfolio"} text={dataNavbar.portfolio}></ItemNav>
+            <ItemNav href={"/contact"} text={dataNavbar.contact}></ItemNav>
           </Box>
           {/*Contenedor UserAcount */}
           <Box>
@@ -204,11 +215,11 @@ export default function NavBar() {
             </IconButton>
           </Box>
           <Box sx={{ display: "flex" }}>
-            <IconButton color="inherit">
+            <IconButton color="inherit" onClick={changeLanguageEn}>
               <Typography variant="subtitle2">EN</Typography>
             </IconButton>
             <Divider orientation="vertical" variant="middle" flexItem></Divider>
-            <IconButton color="inherit">
+            <IconButton color="inherit" onClick={changeLanguageEs}>
               <Typography variant="subtitle2">ES</Typography>
             </IconButton>
           </Box>

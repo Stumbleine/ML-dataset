@@ -54,26 +54,26 @@
       "hello": "Hi everyone! my name is",
       "name": "Cristhian M. Cespedes",
       "profession": "Designer and Developer Web.",
-      "presentation": "Soy un ingeniero de sistemas enfocado en el diseño y construccion de aplicaciones web que generan experiencias digitales excepcionales, actualmente me encuentro ampliando mis conocimientos en el desarrollo para moviles con Flutter.",
+      "presentation": "I am a systems engineer focused on the design and construction of web applications that generate exceptional digital experiences, I am currently expanding my knowledge in backend development with .NET core.",
       "btnAbout": "About me"
     },
     "about": {
       "subtitle": "About me",
-      "p1": "Hola, soy cristhian mercado cespedes un ingeniero de sistemas con residencia en Bolivia, especializado en el desarrollo web, desde 2018 durante mi carrera tuve la suerte de aprender sobre tecnologias web y hasta la actualidad me he dedicado a aprender y pulir mis habilidades de programacion.",
-      "p2": "Al principio conecte con la animaciones que se podian realizar en la web tan simples que son hermosos, asi al principio aprendi por cuenta propia sobre tecnolgias Frontend y posteriormente Backend.",
-      "p3": "Actualmente me encuentro aprendiendo sobre el desarrollo de aplicaciones multiplataforma con Flutter.",
-      "p4": "Aqui las tecnologias que utilizo actualmente:",
-      "btnDownload": "Descargar CV"
+      "p1": "Hello, I am Cristhian Mercado Cespedes, a systems engineer residing in Bolivia, specialized in web development, since 2018 during my career I was lucky enough to learn about web technologies and until now I have dedicated myself to learning and polishing my programming skills.",
+      "p2": "Learning HTML CSS and Javascript on my own opened the way to Frontend frameworks and later Backend. Design was my main motivation and along the way I learned about UI/UX design..",
+      "p3": "I am currently looking for a job, and consolidating my knowledge of backend with .NET core framework.",
+      "p4": "Technologies I currently use:",
+      "btnDownload": "Download CV"
     },
     "portfolio": {
       "subtitle": "Projects",
-      "text": "Algunos de los proyectos, practicas y colaboraciones que realice.",
+      "text": "Projects, practices and collaborations that I carried out.",
       "projects": [
         {
           "id": 1,
           "img": "./imgs/waves.jpg",
           "title": "Dactilosaurio",
-          "description": "Aplicacion para practicar dactilografia online con amigos, inspirada en la conocida app Velocidactil.",
+          "description": "Application to practice typing online with friends, inspired by the well-known Velocidactil app.",
           "technologies": ["React", "NET core", "MUI"],
           "url": null,
           "github": "https://github.com/Stumbleine/Dactilosaurio",
@@ -82,8 +82,8 @@
         {
           "id": 2,
           "img": "./imgs/waves.jpg",
-          "title": "Sistema de cotizaciones",
-          "description": "Sistema web de cotizaciones para el apoyo al departamento de administracion financiera UMSS.",
+          "title": "Quotation system",
+          "description": "Web quotation system to support the UMSS financial administration department.",
           "technologies": ["Angular", "Spring Boot", "Material"],
           "url": null,
           "github": "https://github.com/Stumbleine/sistema-cotizaciones",
@@ -93,7 +93,7 @@
           "id": 3,
           "img": "./imgs/waves.jpg",
           "title": "Restaurant app",
-          "description": "Practica de consumo de APIS con un sistema de gestion de platos de comida y delivery.",
+          "description": "API REST consumption practice in a food product management system and its delivery for a restaurant.",
           "technologies": ["Vue", "Spring Boot", "Vuetify"],
           "url": null,
           "github": "https://github.com/Stumbleine/FR-delivery",
@@ -102,8 +102,8 @@
         {
           "id": 4,
           "img": "./imgs/waves.jpg",
-          "title": "IA reconocimiento facial",
-          "description": "Practica de una app web para examenes online con reconomiento facial basado en un sistema multiagentes.",
+          "title": "AI facial recognition",
+          "description": "Practice of a web app to perform online exams with facial recognition based on a multi-agent system.",
           "technologies": ["Angular", "Spring Boot", "faceapi"],
           "url": null,
           "github": "https://github.com/Stumbleine/Dactilosaurio",
@@ -112,38 +112,18 @@
         {
           "id": 5,
           "img": "./imgs/waves.jpg",
-          "title": "Bot-cosmos discord",
-          "description": "Bot basico realizado en Node js para un canal propio de discord.",
-          "technologies": ["Node js", "Discord js"],
-          "url": null,
-          "github": "https://github.com/Stumbleine/Dactilosaurio",
-          "gitlab": null
-        },
-        {
-          "id": 6,
-          "img": "./imgs/waves.jpg",
-          "title": "Gestor servicio SAMBA",
-          "description": "Aplicacion para navegador que gestiona el servicio de SAMBA para la distribucion OpenSuse 15.1",
+          "title": "SAMBA Service Manager",
+          "description": "Practice of an application to manage the SAMBA service for the Linux distribution OpenSuse 15.1",
           "technologies": ["C", "HTML", "Bootstrap"],
           "url": null,
           "github": "https://github.com/Stumbleine/ProyectoASO-web-SAMBA",
-          "gitlab": null
-        },
-        {
-          "id": 7,
-          "img": "./imgs/waves.jpg",
-          "title": "Agentes inteligentes ",
-          "description": "Simulacion de un entorno con agentes inteligentes (robots)   para el reconocimiento de figuras y colores.",
-          "technologies": ["Python", "OpenCV", "VREP"],
-          "url": null,
-          "github": "https://github.com/Stumbleine/Dactilosaurio",
           "gitlab": null
         }
       ]
     },
     "contact": {
       "subtitle": "Contact",
-      "p": "Dejo aqui mis datos para cualquier consulta, oferta de trabajo, colaboracion o simplemente saludar. Estoy siempre pendiente de mi correo.",
+      "p": "I am currently looking for a job, I leave my data here for any query, job offer, collaboration or just to say hello. I am always aware of my mail.",
       "btnHello": "Say hello"
     },
 

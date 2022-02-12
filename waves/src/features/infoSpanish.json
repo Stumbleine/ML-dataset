@@ -46,7 +46,7 @@
     },
     "Navbar": {
       "home": "Inicio",
-      "about": "Sobre mi",
+      "about": "Perfil",
       "portfolio": "Portafolio",
       "contact": "Contacto"
     },
@@ -54,20 +54,20 @@
       "hello": "Hola a todos, mi nombre es",
       "name": "Cristhian M. Cespedes",
       "profession": "Diseñador y desarrollador web.",
-      "presentation": "Soy un ingeniero de sistemas enfocado en el diseño y construccion de aplicaciones web que generan experiencias digitales excepcionales, actualmente me encuentro ampliando mis conocimientos en el desarrollo para moviles con Flutter.",
-      "btnAbout": "About me"
+      "presentation": "Soy un ingeniero de sistemas enfocado en el diseño y construcción de aplicaciones web que generan experiencias digitales excepcionales, actualmente me encuentro ampliando mis conocimientos en el desarrollo backend con .NET core",
+      "btnAbout": "Perfil"
     },
     "about": {
       "subtitle": "Perfil",
       "p1": "Hola, soy cristhian mercado cespedes un ingeniero de sistemas con residencia en Bolivia, especializado en el desarrollo web, desde 2018 durante mi carrera tuve la suerte de aprender sobre tecnologias web y hasta la actualidad me he dedicado a aprender y pulir mis habilidades de programacion.",
-      "p2": "Al principio conecte con la animaciones que se podian realizar en la web tan simples que son hermosos, asi al principio aprendi por cuenta propia sobre tecnolgias Frontend y posteriormente Backend.",
-      "p3": "Actualmente me encuentro aprendiendo sobre el desarrollo de aplicaciones multiplataforma con Flutter.",
-      "p4": "Aqui las tecnologias que utilizo actualmente:",
+      "p2": "Aprendiendo por cuenta propia HTML CSS y Javascript me abrio paso hacia  frameworks de Frontend y posteriormente Backend. El diseño fue mi principal motivacion y en el camino aprendi sobre diseño UI/UX.",
+      "p3": "Actualmente me encuentro en busqueda de trabajo, y consolidando mis conocimientos de backend con .NET core framework.",
+      "p4": "Tecnologías que utilizo actualmente:",
       "btnDownload": "Descargar CV"
     },
     "portfolio": {
       "subtitle": "Proyectos",
-      "text": "Algunos de los proyectos, practicas y colaboraciones que realice.",
+      "text": "Proyectos, practicas y colaboraciones que realice.",
       "projects": [
         {
           "id": 1,
@@ -93,7 +93,7 @@
           "id": 3,
           "img": "./imgs/waves.jpg",
           "title": "Restaurant app",
-          "description": "Practica de consumo de APIS con un sistema de gestion de platos de comida y delivery.",
+          "description": "Practica de consumo de API REST en un sistema de gestion de productos de comida y su delivery para un restaurante.",
           "technologies": ["Vue", "Spring Boot", "Vuetify"],
           "url": null,
           "github": "https://github.com/Stumbleine/FR-delivery",
@@ -103,7 +103,7 @@
           "id": 4,
           "img": "./imgs/waves.jpg",
           "title": "IA reconocimiento facial",
-          "description": "Practica de una app web para examenes online con reconomiento facial basado en un sistema multiagentes.",
+          "description": "Practica de una app web para realizar examenes online con reconocimiento facial basado en un sistema multiagentes.",
           "technologies": ["Angular", "Spring Boot", "faceapi"],
           "url": null,
           "github": "https://github.com/Stumbleine/Dactilosaurio",
@@ -112,38 +112,18 @@
         {
           "id": 5,
           "img": "./imgs/waves.jpg",
-          "title": "Bot-cosmos discord",
-          "description": "Bot basico realizado en Node js para un canal propio de discord.",
-          "technologies": ["Node js", "Discord js"],
-          "url": null,
-          "github": "https://github.com/Stumbleine/Dactilosaurio",
-          "gitlab": null
-        },
-        {
-          "id": 6,
-          "img": "./imgs/waves.jpg",
-          "title": "Gestor servicio SAMBA",
-          "description": "Aplicacion para navegador que gestiona el servicio de SAMBA para la distribucion OpenSuse 15.1",
+          "title": "Gestor de servicio SAMBA",
+          "description": "Practica de una aplicacion para  administrar el servicio SAMBA para la distribucion linux OpenSuse 15",
           "technologies": ["C", "HTML", "Bootstrap"],
           "url": null,
           "github": "https://github.com/Stumbleine/ProyectoASO-web-SAMBA",
-          "gitlab": null
-        },
-        {
-          "id": 7,
-          "img": "./imgs/waves.jpg",
-          "title": "Agentes inteligentes ",
-          "description": "Simulacion de un entorno con agentes inteligentes (robots)   para el reconocimiento de figuras y colores.",
-          "technologies": ["Python", "OpenCV", "VREP"],
-          "url": null,
-          "github": "https://github.com/Stumbleine/Dactilosaurio",
           "gitlab": null
         }
       ]
     },
     "contact": {
       "subtitle": "Contacto",
-      "p": "Dejo aqui mis datos para cualquier consulta, oferta de trabajo, colaboracion o simplemente saludar. Estoy siempre pendiente de mi correo.",
+      "p": "Actualmente me encuentro en la busqueda de trabajo, dejo aqui mis datos para cualquier consulta, oferta de trabajo, colaboracion o simplemente saludar. Estoy siempre pendiente de mi correo.",
       "btnHello": "Say hello"
     },
 
